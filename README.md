@@ -1,4 +1,4 @@
 # Projeto calculadora
 
-### Descrição
+## Descrição
 Projeto calculadora destinado ao DevInHouse
