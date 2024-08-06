@@ -12,5 +12,8 @@ function gerarResultado(event) {
 
   let resultado = sum(num1, num2);
 
-  alert(resultado);
+  alert(`O resultado é ${resultado}.`);
+  document.getElementById("txt-result").innerText = `Resultado ${resultado}`;
 }
+
+document.getElementById("formSoma").addEventListener("submit", gerarResultado);

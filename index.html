@@ -14,10 +14,10 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center my-4">Calculadora Simples</h1>
-      <div class="card">
+      <h1 class="text-center my-4">Calculadora simples de soma</h1>
+      <div class="card border border-black">
         <div class="card-body">
-          <form>
+          <form id="formSoma">
             <div class="mb-3">
               <div class="col-auto">
                 <label for="num1" class="col-form-label">Número 1</label>
@@ -39,18 +39,21 @@
               <div class="col-auto">
                 <input
                   type="number"
-                  id="num1"
+                  id="num2"
                   class="form-control"
                   placeholder="Digite o segundo número"
                 />
               </div>
             </div>
 
-            <button class="btn btn-outline-white border border-black">
+            <button
+              type="submit"
+              class="btn btn-outline-white border border-black"
+            >
               Calcular
             </button>
-            <span id="txt-resultado"></span>
           </form>
+          <span class="my-4" id="txt-result"></span>
         </div>
       </div>
     </div>
