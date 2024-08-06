@@ -10,7 +10,7 @@ function gerarResultado(event) {
   let num1 = parseInt(document.getElementById("num1").value);
   let num2 = parseInt(document.getElementById("num2").value);
 
-  let resultado = sum(num1, num2);
+  const resultado = sum(num1, num2);
 
   alert(`O resultado é ${resultado}.`);
   document.getElementById("txt-result").innerText = `Resultado ${resultado}`;
