@@ -10,41 +10,46 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container center">
       <h1>Calculadora Simples</h1>
 
-      <div class="card">
-        <div class="card-body">
-          <div class="mb-3 row">
-            <div class="col-auto">
-              <label for="num1" class="col-form-label">Número 1: </label>
-            </div>
-            <div class="col-md-3">
-              <input
-                type="number"
-                id="num1"
-                class="form-control"
-                placeholder="Digite primeiro número"
-              />
-            </div>
+      <form class="m-5 p-5 border border-black">
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="num1" class="col-form-label">Número 1</label>
           </div>
-          <div class="mb-3 row">
-            <div class="col-auto">
-              <label for="num2" class="col-form-label">Número 2: </label>
-            </div>
-            <div class="col-md-3">
-              <input
-                type="number"
-                id="num2"
-                class="form-control"
-                placeholder="Digite segundo número"
-              />
-            </div>
+          <div class="col-auto">
+            <input
+              type="number"
+              id="num1"
+              class="form-control"
+              placeholder="Digite"
+            />
           </div>
         </div>
-      </div>
+
+        <div class="row g-3 align-items-center mt-2 mb-4">
+          <div class="col-auto">
+            <label for="num2" class="col-form-label">Número 2</label>
+          </div>
+          <div class="col-auto">
+            <input
+              type="number"
+              id="num2"
+              class="form-control"
+              placeholder="Digite"
+            />
+          </div>
+        </div>
+
+        <button class="btn btn-outline-white border border-black">
+          Calcular
+        </button>
+        <span id="txt-resultado"></span>
+      </form>
     </div>
 
     <script type="module" src="script.js"></script>
